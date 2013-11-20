@@ -1,0 +1,15 @@
+development:
+  adapter: postgresql
+  encoding: utf-8
+  database: crowdinvestor_development
+  pool: 5
+  template: template0
+  host: localhost
+
+test:
+  adapter: postgresql
+  encoding: utf-8
+  database: crowdinvestor_test
+  pool: 5
+  template: template0
+  host: localhost
