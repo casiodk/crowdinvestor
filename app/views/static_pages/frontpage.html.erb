@@ -65,10 +65,12 @@
     </div><!-- /.col-lg-4 -->
 
     <div class="col-lg-4">
-      <img src="http://placekitten.com/350/350" alt="..." class="img-circle img-responsive" width="200">
-      <h2>Heading</h2>
-      <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
-      <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+      <img src="https://s3.amazonaws.com/misc_soundtracktor/ddl.jpg" alt="..." class="img-circle img-responsive" width="200">
+      <h2>Econeers</h2>
+      <p>Aus Biomasse entsteht Strom, Wärme und Biokohle. Das Tiefschwarz-Konzept nutzt das energetische Potential abfallartiger Biomasse und erzeugt dabei keine neuen Abfälle.</p>
+      <span class="text-muted"><%= link_to "www.econeers.de", "https://www.econeers.de/investmentchancen/Tiefschwarz/details", target: :blank %></span>
+
+      <p><a class="btn btn-default" href="#" role="button">Gå til firmaoversigt &raquo;</a></p>
     </div><!-- /.col-lg-4 -->
 
     <div class="col-lg-4">
@@ -86,6 +88,9 @@
 
   <div class="row featurette">
   	<div class="col-md-8">
+      <span class="text-muted pull-right badge">
+        1.000 Dkk = 0.024%
+      </span>
   	  <h2 class="featurette-heading">Soundtracktor ApS</h2>
   	  <span class="text-muted">75% funded | 1.5 mio Dkk investeret | 2 mio Dkk målsætning | 21 investorer | 23 dage tilbage | Cap value 5.8 mio Dkk</span>
   	  <div class="progress">
@@ -96,9 +101,6 @@
   	  <p class="lead">
   	  	Soundtracktor ApS er en online musiklicenseringsplatform for professionelle produktionsselskaber
   	  </p>
-      <div class="text-muted">
-        1000 Dkk = 0.024%
-      </div>
       <%= link_to "Se mere #{ fa_icon "arrow-right" }".html_safe, "#", class: "btn btn-success btn-lg" %>
   	</div>
 
