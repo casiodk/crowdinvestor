@@ -1,4 +1,11 @@
 GIT
+  remote: git://github.com/PerfectlyNormal/highcharts-rails.git
+  revision: c644e86d1fcc517829130db9cab0ff135979f84f
+  specs:
+    highcharts-rails (3.0.7)
+      railties (>= 3.1)
+
+GIT
   remote: git://github.com/bokmann/font-awesome-rails.git
   revision: f75b7ac4ee7abd013c1efbe6e34f23fd27b7cd77
   specs:
@@ -150,6 +157,7 @@ PLATFORMS
 DEPENDENCIES
   coffee-rails (~> 4.0.0)
   font-awesome-rails!
+  highcharts-rails (~> 3.0.0)!
   jbuilder (~> 1.2)
   jquery-rails
   less-rails

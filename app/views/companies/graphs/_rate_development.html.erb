@@ -1,0 +1,33 @@
+<div id="container-company-graphs-rate-development" style="width: 65%; height: 300px; margin: 20 auto"></div>
+<script>
+	$(function() {
+		$.getJSON('http://www.highcharts.com/samples/data/jsonp.php?filename=aapl-c.json&callback=?', function(data) {
+
+			// Create the chart
+			$('#container-company-graphs-rate-development').highcharts('StockChart', {
+				
+
+				rangeSelector : {
+					selected : 1
+				},
+
+				title : {
+					text : 'Soundtracktor ApS'
+				},
+				
+				series : [{
+					name : 'Soundtracktor kurs',
+					data : data,
+					marker : {
+						enabled : true,
+						radius : 3
+					},
+					shadow : true,
+					tooltip : {
+						valueDecimals : 2
+					}
+				}]
+			});
+		});
+	});
+</script>

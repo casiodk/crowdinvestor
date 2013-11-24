@@ -1,0 +1,65 @@
+
+<div id="container-company-graphs-ownership" style="width: 65%; height: 300px; margin: 20 auto"></div>
+<script>
+$(function () {
+    var chart,
+        categories = ['120', '121', '122'];
+         categoriee = ['124', '125', '126'];
+    $(document).ready(function() {
+        $('#container-company-graphs-ownership').highcharts({
+            chart: {
+                type: 'bar'
+            },
+            title: {
+                text: 'Ordredybde'
+            },
+            subtitle: {
+                text: 'crowdinvestor.dk'
+            },
+            xAxis: [{
+                categories: categories,
+                reversed: false
+            }, { // mirror axis on right side
+                opposite: true,
+                reversed: true,
+                categories: categoriee,
+                linkedTo: 0
+            }],
+            yAxis: {
+                title: {
+                    text: null
+                },
+                labels: {
+                    formatter: function(){
+                        return (Math.abs(this.value));
+                    }
+                },
+                min: -100,
+                max: 100
+            },
+    
+            plotOptions: {
+                series: {
+                    stacking: 'normal'
+                }
+            },
+    
+            tooltip: {
+                formatter: function(){
+                    return '<b>'+ this.series.name +', bud '+ this.point.category +'</b><br/>'+
+                        'Antal: '+ Highcharts.numberFormat(Math.abs(this.point.y), 0);
+                }
+            },
+    
+            series: [{
+                name: 'Købsbud',
+                data: [-11, -34, -78]
+            }, {
+                name: 'Salgsbud',
+                data: [2, 4, 34]
+            }]
+        });
+    });
+    
+});
+</script>
