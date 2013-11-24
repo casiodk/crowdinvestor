@@ -1,0 +1,55 @@
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Spørgsmål og svar</h3>
+  </div>
+  <div class="panel-body">
+    <div class="table-responsive">
+      <table class="table table-striped table-hover">
+        <thead>
+        	<tr>
+        		<th></th>
+        		<th>Emne</th>
+        		<th>Oprettet af</th>
+        		<th>Svar</th>
+        		<th>Set</th>
+        		<th>Seneste indlæg</th>
+        	</tr>
+        </thead>
+        <tbody>
+        	<tr>
+        		<th><%= fa_icon "comment-o" %></th>
+        		<th><%= link_to "Hvor mange % ejerandel giver 20.000 Dkk", "#" %></th>
+        		<th><%= link_to "nicsee", "#nicsee" %></th>
+        		<th>3</th>
+        		<th>22 gange</th>
+        		<th><%= l Time.now - rand(88).hours, format: :short %></th>
+        	</tr>
+        	<tr>
+        		<th><%= fa_icon "comment-o" %></th>
+        		<th><%= link_to "Hvornår ligger den første proto...", "#" %></th>
+        		<th><%= link_to "bjarne_m_88", "#bjarne_m_88" %></th>
+        		<th>1</th>
+        		<th>11 gange</th>
+        		<th><%= l Time.now - rand(15000).minutes, format: :short %></th>
+        	</tr>
+        	<tr>
+        		<th><%= fa_icon "comment-o" %></th>
+        		<th><%= link_to "Er der en bestyrelse i selskabet", "#" %></th>
+        		<th><%= link_to "Vivovo", "#Vivovo" %></th>
+        		<th>8</th>
+        		<th>124 gange</th>
+        		<th><%= l Time.now - rand(88).hours, format: :short %></th>
+        	</tr>
+        	<tr>
+        		<th><%= fa_icon "comment-o" %></th>
+        		<th><%= link_to "Er spillet ude i Sverige", "#" %></th>
+        		<th><%= link_to "nicsee", "#nicsee" %></th>
+        		<th>5</th>
+        		<th>67 gange</th>
+        		<th><%= l Time.now - rand(88).hours, format: :short %></th>
+        	</tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

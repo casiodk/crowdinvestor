@@ -1,0 +1,10 @@
+<header>
+	<h4><%= company_name %></h4>
+</header>
+<ul class="executive-summary list-unstyled">
+	<% for executive_summary_point in executive_summary_points %>
+	<%= content_tag :li do %>
+	<%= fa_icon "bullet" %> <%= executive_summary_point %>
+	<% end %>
+	<% end %>
+</ul>
