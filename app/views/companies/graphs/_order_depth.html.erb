@@ -45,7 +45,7 @@ $(function () {
         },
         tooltip: {
           formatter: function(){
-            return '<b>'+ this.series.name +', kurs '+ this.point.x.reversed.category +'</b><br/>'+
+            return '<b>'+ this.series.name +', kurs '+ this.point.category +'</b><br/>'+
             'Antal: '+ Highcharts.numberFormat(Math.abs(this.point.y), 0);
           }
         },
