@@ -1,3 +1,7 @@
-# Place all the behaviors and hooks related to the matching controller here.
-# All this logic will automatically be available in application.js.
-# You can use CoffeeScript in this file: http://coffeescript.org/
+ready_companies = ->
+
+  $('.nav.nav-tabs a[href]').on 'shown.bs.tab', ->
+    $(window).trigger 'resize'
+
+$(document).ready(ready_companies)
+$(document).on('page:load', ready_companies)

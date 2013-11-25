@@ -1,5 +1,5 @@
 
-<div id="container-company-graphs-ownership" style="width: 65%; margin: 20 auto"></div>
+<div id="container-company-graphs-ownership"></div>
 <script>
 $(function () {
 
@@ -45,7 +45,7 @@ $(function () {
         },
         tooltip: {
           formatter: function(){
-            return '<b>'+ this.series.name +', bud '+ this.point.category +'</b><br/>'+
+            return '<b>'+ this.series.name +', kurs '+ this.point.x.reversed.category +'</b><br/>'+
             'Antal: '+ Highcharts.numberFormat(Math.abs(this.point.y), 0);
           }
         },

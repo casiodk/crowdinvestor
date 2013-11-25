@@ -73,26 +73,6 @@
 		<div class="well">
 			<%= render "companies/executive_summary_list", company_name: @company_name, executive_summary_points: @executive_summary_points %>
 			<%= render "companies/rewards" %>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
-			<br>
 		</div>
 	</div>
 
@@ -109,39 +89,56 @@
 
 		<div class="row">
 			<div class="col-md-12">
-					<ul class="nav nav-tabs">
-					  <li class="active"><a href="#executive-summary" data-toggle="tab">Executive summary</a></li>
-					  <li><a href="#rate_development" data-toggle="tab">Kursudvikling</a></li>
-					  <li><a href="#order_depth" data-toggle="tab">Ordredybde</a></li>
-					  <li><a href="#ownership" data-toggle="tab">Ejerandele</a></li>
-					  <li><%= link_to "Q&A (4)", "#q_and_a", data: { toggle: "tab" } %></li>
-					  <li><%= link_to "Blog", "#blog", data: { toggle: "tab" } %></li>
-					</ul>
+				<ul class="nav nav-tabs">
+				  <li class="active">
+				  	<a href="#executive-summary" data-toggle="tab">Executive summary</a>
+				  </li>
+				  <li>
+				  	<a href="#rate_development" data-toggle="tab">Kursudvikling</a>
+				  </li>
+				  <li>
+				  	<a href="#order_depth" data-toggle="tab">Ordredybde</a>
+				  </li>
+				  <li>
+				  	<a href="#ownership" data-toggle="tab">Ejerandele</a>
+				  </li>
+				  <li>
+				  	<%= link_to "Q&A (4)", "#q_and_a", data: { toggle: "tab" } %>
+				  </li>
+				  <li>
+				  	<%= link_to "Blog", "#blog", data: { toggle: "tab" } %>
+				  </li>
+				</ul>
 
-					<div class="tab-content">
-					  <div class="tab-pane fade in active" id="executive-summary">
-					  	<%= render 'companies/executive_summary' %>			  	
-					  </div>
-					  <div class="tab-pane fade" id="rate_development">
-				  		<%= render 'companies/graphs/rate_development' %>
-					  </div>
-					  <div class="tab-pane fade" id="order_depth">
-					  	 <%= render 'companies/graphs/order_depth' %>
-					  </div>
-					  <div class="tab-pane fade" id="ownership">
-					  	 <%= render 'companies/graphs/ownership' %>
-					  </div>
-					  <div class="tab-pane fade" id="q_and_a">
-					  	 <%= render 'companies/q_and_a' %>
-					  </div>
-					  <div class="tab-pane fade" id="blog">
-					  	 
-					  </div>
-					</div>
+				<div class="tab-content">
+				  <div class="tab-pane fade in active" id="executive-summary">
+				  	<%= render 'companies/executive_summary' %>
+				  </div>
+				  <div class="tab-pane fade" id="rate_development">
+			  		<%= render 'companies/graphs/rate_development' %>
+				  </div>
+				  <div class="tab-pane fade" id="order_depth">
+				  	 <%= render 'companies/graphs/order_depth' %>
+				  </div>
+				  <div class="tab-pane fade" id="ownership">
+				  	 <%= render 'companies/graphs/ownership' %>
+				  </div>
+				  <div class="tab-pane fade" id="q_and_a">
+				  	 <%= render 'companies/q_and_a' %>
+				  </div>
+				  <div class="tab-pane fade" id="blog">
+
+				  </div>
+				</div>
 			</div>
 		</div>
 		<hr>
-		<!-- Social -->
+	</div>
+</div>
+
+<!-- Social -->
+<div class="row">
+	<div class="col-md-9 col-md-offset-3">
 		<div class="row">
 			<div class="col-md-4">
 				<div class="fb-share-button" data-href="http://developers.facebook.com/docs/plugins/" data-type="button_count"></div>
@@ -159,4 +156,3 @@
 		</div>
 	</div>
 </div>
-

@@ -16,4 +16,5 @@
 //= require highstock
 //= require exporting
 //= require turbolinks
+//= require companies
 //= require_tree .
