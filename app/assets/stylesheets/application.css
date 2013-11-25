@@ -1,5 +1,7 @@
 /*
  *= require_self
  *= require bootstrap_and_overrides
+ *= require static_pages
+ *= require companies
  *= require font-awesome
  */

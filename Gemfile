@@ -9,6 +9,7 @@ gem 'pg'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
+gem "compass-rails", "~> 2.0.alpha.0"
 
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
@@ -53,3 +54,4 @@ gem "less-rails" #Sprockets (what Rails 3.1 uses for its asset pipeline) support
 gem "twitter-bootstrap-rails", github: "seyhunak/twitter-bootstrap-rails", branch: "bootstrap3"
 gem 'font-awesome-rails', github: "bokmann/font-awesome-rails"
 gem "highcharts-rails", "~> 3.0.0", github: "PerfectlyNormal/highcharts-rails"
+gem "lorem" # PROTOTYPE
