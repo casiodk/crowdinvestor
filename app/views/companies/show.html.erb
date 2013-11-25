@@ -3,98 +3,95 @@
 <%= render 'companies/usps' %>
 
 <div class="row">
-	<div class="col-md-3">
-		<div class="well">
-			<%= render "companies/executive_summary_list", company_name: @company_name, executive_summary_points: @executive_summary_points %>
-			<%= render "companies/rewards" %>
-			<%= render "companies/latest_investors" %>
-		</div>
-	</div>
+  <div class="col-md-3">
+    <div class="well">
+      <%= render "companies/executive_summary_list", company_name: @company_name, executive_summary_points: @executive_summary_points %>
+      <%= render "companies/rewards" %>
+      <%= render "companies/latest_investors" %>
+    </div>
+  </div>
 
-	<div class="col-md-9">
-		<div class="row">
-			<div class="col-md-8">
-				<iframe src="//player.vimeo.com/video/76625644" width="100%" height="281" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-			</div>
-			<div class="col-md-4 company_investment_box">
-				<header>
-					<h2>345.000 Dkk</h2>
-				</header>
-				<p class="text-muted">investeret (svarende til 8.9% equity)</p>
-				<hr>
-				<p>Investeringsmål 1.725 mio Dkk</p>
-				<p>Svarende til 44.5% equity</p>
-				<hr>
-				<%= link_to "Invester nu", "#", class: "btn btn-lg btn-success", role: "button" %>
-			</div>
-		</div>
+  <div class="col-md-9">
+    <div class="row">
+      <div class="col-md-8">
+        <iframe src="//player.vimeo.com/video/76625644" width="100%" height="281" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+      </div>
+      <div class="col-md-4 company_investment_box">
+        <header>
+          <h2>345.000 Dkk</h2>
+        </header>
+        <p class="text-muted">investeret (svarende til 3% equity)</p>
+        <hr>
+        <p>Investeringsmål 1.725 mio Dkk</p>
+        <p>Svarende til 15% equity</p>
+        <hr>
+        <button class="btn btn-success btn-lg" data-toggle="modal" data-target="#investmentModal">
+          Invester nu
+        </button>
+      </div>
+    </div>
 
-		<div class="row">
-			<div class="col-md-12">
-				<ul class="nav nav-tabs">
-				  <li class="active">
-				  	<a href="#executive-summary" data-toggle="tab">Executive summary</a>
-				  </li>
-				  <li>
-				  	<a href="#rate_development" data-toggle="tab">Kursudvikling</a>
-				  </li>
-				  <li>
-				  	<a href="#order_depth" data-toggle="tab">Ordredybde</a>
-				  </li>
-				  <li>
-				  	<a href="#ownership" data-toggle="tab">Ejerandele</a>
-				  </li>
-				  <li>
-				  	<%= link_to "Q&A (4)", "#q_and_a", data: { toggle: "tab" } %>
-				  </li>
-				  <li>
-				  	<%= link_to "Blog", "#blog", data: { toggle: "tab" } %>
-				  </li>
-				</ul>
+    <div class="row">
+      <div class="col-md-12">
+        <ul class="nav nav-tabs">
+          <li class="active"><%= link_to "Executive summary", "#executive_summary", data: { toggle: "tab" } %></li>
+          <li><%= link_to "Kursudvikling", "#rate_development", data: { toggle: "tab" } %></li>
+          <li><%= link_to "Ordredybde", "#order_depth", data: { toggle: "tab" } %></li>
+          <li><%= link_to "Ejerandele", "#ownership", data: { toggle: "tab" } %></li>
+          <li><%= link_to "Q&A (4)", "#q_and_a", data: { toggle: "tab" } %></li>
+          <li><%= link_to "Blog", "#blog", data: { toggle: "tab" } %></li>
+          <li><%= link_to "Firmainfo", "#company_details", data: { toggle: "tab" } %></li>
+        </ul>
 
-				<div class="tab-content">
-				  <div class="tab-pane fade in active" id="executive-summary">
-				  	<%= render 'companies/executive_summary' %>
-				  </div>
-				  <div class="tab-pane fade" id="rate_development">
-			  		<%= render 'companies/graphs/rate_development' %>
-				  </div>
-				  <div class="tab-pane fade" id="order_depth">
-				  	 <%= render 'companies/graphs/order_depth' %>
-				  </div>
-				  <div class="tab-pane fade" id="ownership">
-				  	 <%= render 'companies/graphs/ownership' %>
-				  </div>
-				  <div class="tab-pane fade" id="q_and_a">
-				  	 <%= render 'companies/q_and_a' %>
-				  </div>
-				  <div class="tab-pane fade" id="blog">
-						<%= render 'companies/blog' %>
-				  </div>
-				</div>
-			</div>
-		</div>
-		<hr>
-	</div>
+        <div class="tab-content">
+          <div class="tab-pane fade in active" id="executive_summary">
+            <%= render 'companies/executive_summary' %>
+          </div>
+          <div class="tab-pane fade" id="rate_development">
+            <%= render 'companies/graphs/rate_development' %>
+          </div>
+          <div class="tab-pane fade" id="order_depth">
+             <%= render 'companies/graphs/order_depth' %>
+          </div>
+          <div class="tab-pane fade" id="ownership">
+             <%= render 'companies/graphs/ownership' %>
+          </div>
+          <div class="tab-pane fade" id="q_and_a">
+             <%= render 'companies/q_and_a' %>
+          </div>
+          <div class="tab-pane fade" id="blog">
+            <%= render 'companies/blog' %>
+          </div>
+          <div class="tab-pane fade" id="company_details">
+            <%= render 'companies/company_details' %>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+  </div>
 </div>
 
 <!-- Social -->
 <div class="row">
-	<div class="col-md-9 col-md-offset-3">
-		<div class="row">
-			<div class="col-md-4">
-				<div class="fb-share-button" data-href="http://developers.facebook.com/docs/plugins/" data-type="button_count"></div>
-			</div>
-			<div class="col-md-4">
-				<a href="https://twitter.com/share" class="twitter-share-button" data-lang="en">Tweet</a>
-				<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-			</div>
-			<div class="col-md-4">
-				<script src="//platform.linkedin.com/in.js" type="text/javascript">
-				 lang: en_US
-				</script>
-				<script type="IN/Share" data-counter="right"></script>
-			</div>
-		</div>
-	</div>
+  <div class="col-md-9 col-md-offset-3">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="fb-share-button" data-href="http://developers.facebook.com/docs/plugins/" data-type="button_count"></div>
+      </div>
+      <div class="col-md-4">
+        <a href="https://twitter.com/share" class="twitter-share-button" data-lang="en">Tweet</a>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+      </div>
+      <div class="col-md-4">
+        <script src="//platform.linkedin.com/in.js" type="text/javascript">
+         lang: en_US
+        </script>
+        <script type="IN/Share" data-counter="right"></script>
+      </div>
+    </div>
+  </div>
 </div>
+
+
+<%= render "companies/investment_modal_body" %>

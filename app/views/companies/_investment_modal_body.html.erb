@@ -1,0 +1,29 @@
+<!-- Modal -->
+<div class="modal fade" id="investmentModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">Invester i Soundtracktor ApS</h4>
+      </div>
+      <div class="modal-body">
+        <%= Lorem::Base.new('paragraphs', 2).output %>
+        <hr>
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="input-group">
+              <span class="input-group-btn">
+                <button class="btn btn-default" type="button">Dkk</button>
+              </span>
+              <input type="text" class="form-control" placeholder="Indtast beløb">
+            </div><!-- /input-group -->
+            <br>
+            <button class="btn btn-success btn-lg" data-toggle="modal" data-target="#investmentModal">
+              <%= fa_icon "check" %> Invester
+            </button>
+          </div><!-- /.col-lg-6 -->
+        </div><!-- /.row -->
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->

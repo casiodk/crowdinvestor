@@ -1,0 +1,71 @@
+<div class="row">
+  <div class="col-md-12">
+    <header>
+      <h3>Soundtracktor ApS</h3>
+    </header>
+    <div class="table-responsive">
+      <table class="table">
+        <tbody>
+          <tr>
+            <td>CVR-nummer</td>
+            <td>33881258</td>
+          </tr>
+          <tr>
+            <td>Status</td>
+            <td>Under funding (75% klar)</td>
+          </tr>
+          <tr>
+            <td>Crowdinvestor ID</td>
+            <td>CI20130501DK345</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12">
+    <ul class="nav nav-tabs">
+      <li class="active"><%= link_to "Detaljer", "#details", data: { toggle: "tab" } %></li>
+      <li><%= link_to "Dokumenter", "#documents", data: { toggle: "tab" } %></li>
+      <li><%= link_to "Team", "#team", data: { toggle: "tab" } %></li>
+    </ul>
+
+    <div class="tab-content">
+      <div class="tab-pane fade in active" id="details">
+        <div class="table-responsive">
+          <table class="table">
+            <tbody>
+              <tr>
+                <td>Adresse</td>
+                <td>Danas Plads 17a, 1915 Frederiksberg C., Danmark</td>
+              </tr>
+              <tr>
+                <td>Direktør</td>
+                <td>Nicolai Seerup</td>
+              </tr>
+              <tr>
+                <td>Antal medarbejdere</td>
+                <td>0-20</td>
+              </tr>
+              <tr>
+                <td>Bestyrelsesmedlemmer</td>
+                <td>Nicolai Seerup, Ole Koch Hansen, Sigismund Leuter</td>
+              </tr>
+              <tr>
+                <td>Industri</td>
+                <td>Musik, licensering</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="documents">
+        <%= render "companies/assets" %>
+      </div>
+      <div class="tab-pane fade" id="team">
+         team
+      </div>
+    </div>
+  </div>
+</div>
